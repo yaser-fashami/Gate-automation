@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "provider": "unpkg",
+      "library": "web-traffic-light@1.0.2",
+      "destination": "wwwroot/lib/web-traffic-light/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "@microsoft/signalr@6.0.10",
+      "destination": "wwwroot/lib/signalr/"
+    }
+  ]
+}

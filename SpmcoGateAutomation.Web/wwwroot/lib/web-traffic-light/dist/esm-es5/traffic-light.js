@@ -1,0 +1,1 @@
+import{p as promiseResolve,b as bootstrapLazy}from"./index-8c398275.js";var patchBrowser=function(){var r=import.meta.url;var t={};if(r!==""){t.resourcesUrl=new URL(".",r).href}return promiseResolve(t)};patchBrowser().then((function(r){return bootstrapLazy([["traffic-light",[[1,"traffic-light",{currentState:[513,"current-state"],color:[513],mode:[513]}]]]],r)}));

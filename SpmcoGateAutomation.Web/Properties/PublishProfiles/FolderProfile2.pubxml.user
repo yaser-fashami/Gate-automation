@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Hediak MicroService\SpmcoGateAutomation\SpmcoGateAutomation.Web\bin\Release\net6.0-windows\publish\</_PublishTargetUrl>
+    <History>True|2022-10-19T12:50:53.0170918Z;</History>
+  </PropertyGroup>
+</Project>

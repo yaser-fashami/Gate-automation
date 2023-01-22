@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "دروازه ورود";
+}
+
+<div class="container text-center">
+    <div class="row my-4">
+        <h1 style="font-size:2.5rem; color:white">دروازه ورود</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row my-4" style="height:70vh;">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="~/img/cameraPH.png" style="position:relative; top:33%"/>
+                    </div>
+                </div>
+            </div>
+            
+            @*            <div class="row my-4">
+                <div class="card">
+                <div class="card-body">
+                <form class="container">
+                <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">شماره پلاک :</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" />
+                </div>
+                </div>
+                <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">شماره کانتینر :</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" />
+                </div>
+                </div>
+                <div class="mb-3">
+                <input type="submit" class="btn btn-info" value="ثبت" />
+                </div>
+                </form>
+                </div>
+                </div>
+                </div>
+            *@
+            <div id="carPlate" style="display:none">
+                <div class="row d-flex justify-content-center my-4">
+                    <div class="c-form__car-plate-input" id="carPlateWrapper" style="width:350px">
+                        <input class="c-form__input c-form__car-plate-input__section1" type="tel" placeholder="⚊ ⚊" id="carPlateSection1">
+                        <input class="c-form__combo c-form__car-plate-input__section2" placeholder="⚊" id="carPlateSection2" style="background-image:none">
+                        <input class="c-form__input c-form__car-plate-input__section3" type="tel" placeholder="⚊ ⚊ ⚊" id="carPlateSection3">
+                        <input class="c-form__input c-form__car-plate-input__section4" type="tel" placeholder="⚊ ⚊" id="carPlateSection4">
+                        <span class="c-form__car-plate-input__iran">
+                            ایران
+                        </span>
+                        <span class="c-form__car-plate-input__last-section-line">
+
+                        </span>
+                        <div class="c-form__car-plate-input__help c-form__car-plate-input__help--section1" id="carPlateSectionHelp"></div>
+                    </div>
+                </div>
+            </div>
+@*            <div class="row my-4">
+                <div class="card">
+                    <div class="card-body">
+                        Log
+                    </div>
+                </div>
+            </div>
+*@
+
+
+        </div>
+        <div class="col-sm-4  my-4">
+            <div class="card container" style="background-color:rgba(0,0,0,0.5)">
+                <div class="card-body row d-flex justify-content-center">
+                    <div class="col"><traffic-light mode="three-lights" current-state="on" color="red" style="width: 70px;"></traffic-light></div>
+                    @*<div class="col"><img src="~/img/barrier_Close.jpg" /></div>*@
+                    @*<div class="row d-flex justify-content-center"><img src="~/img/printer.gif" style="width:250px" /></div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>
+@section links
+{
+    <link rel="stylesheet" href="~/css/carPlate.css" />
+}
+
+@section scripts
+{
+    <script type="module" src="~/lib/web-traffic-light/dist/traffic-light/traffic-light.esm.js"></script>
+    <script nomodule src="~/lib/web-traffic-light/dist/traffic-light/traffic-light.js"></script>
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/GateInSignalR.js"></script>
+    <script>
+        (function(){
+            $('body').css('background-image', 'url("../img/green.png")')
+        })();
+    </script>
+}

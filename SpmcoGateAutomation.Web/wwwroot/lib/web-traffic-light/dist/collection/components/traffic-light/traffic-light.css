@@ -1,0 +1,65 @@
+:host {
+  display: block;
+}
+
+.traffic-light {
+  position: relative;
+  background: rgb(99, 105, 120);
+  background: linear-gradient(90deg, rgba(99, 105, 120, 1) 0%, rgba(65, 73, 82, 1) 100%);
+  width: 100%;
+  height: 0;
+  padding-bottom: 245%;
+  border-radius: 4px;
+}
+
+:host([mode='single-light']) .traffic-light {
+  padding-bottom: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20%;
+}
+
+:host([mode='single-light']) .wrapper {
+  padding: 0;
+}
+
+.light {
+  width: 100%;
+  height: 30%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+:host([mode='single-light']) .light {
+  height: 100%;
+}
+
+.red-light.on {
+  background-color: #e53a35;
+  background: linear-gradient(90deg, rgba(229, 58, 53, 1) 0%, rgba(211, 46, 46, 1) 100%);
+  box-shadow: 0 0 20px 5px #e53a35;
+}
+
+.yellow-light.on {
+  background-color: #fcb316;
+  background: linear-gradient(90deg, rgba(252, 179, 22, 1) 0%, rgba(249, 160, 27, 1) 100%);
+  box-shadow: 0 0 20px 5px #fcb316;
+}
+
+.green-light.on {
+  background-color: #7cb342;
+  background: linear-gradient(90deg, rgba(124, 179, 66, 1) 0%, rgba(102, 157, 66, 1) 100%);
+  box-shadow: 0 0 20px 5px #7cb342;
+}

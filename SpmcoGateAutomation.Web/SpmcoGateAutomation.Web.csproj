@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ff0324ab-e730-48fe-82ce-5b213c361f71</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="MassTransit" Version="8.0.5" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="System.Security.Permissions" Version="6.0.0" />
+    <PackageReference Include="TanvirArjel.Extensions.Microsoft.DependencyInjection" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpmcoGateAutomation.Application\SpmcoGateAutomation.Application.csproj" />
+    <ProjectReference Include="..\SpmcoGateAutomation.Common\SpmcoGateAutomation.Common.csproj" />
+    <ProjectReference Include="..\SpmcoGateAutomation.Consumer\SpmcoGateAutomation.Consumer.csproj" />
+    <ProjectReference Include="..\SpmcoGateAutomation.Contract\SpmcoGateAutomation.Contract.csproj" />
+    <ProjectReference Include="..\SpmcoGateAutomation.Domain\SpmcoGateAutomation.Domain.csproj" />
+    <ProjectReference Include="..\SpmcoGateAutomation.ExternalServices\SpmcoGateAutomation.ExternalServices.csproj" />
+    <ProjectReference Include="..\SpmcoGateAutomation.Infrastructure.EFCore\SpmcoGateAutomation.Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\SpmcoGateAutomation.Producer\SpmcoGateAutomation.Producer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SpmcoBctsDatabaseMigrator.Domain">
+      <HintPath>bin\Debug\net6.0-windows\SpmcoBctsDatabaseMigrator.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="SpmcoBctsDatabaseMigrator.Infrastructure">
+      <HintPath>bin\Debug\net6.0-windows\SpmcoBctsDatabaseMigrator.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpmcoGateAutomation.Common\SpmcoGateAutomation.Common.csproj" />
+    <ProjectReference Include="..\SpmcoGateAutomation.Domain\SpmcoGateAutomation.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SpmcoBctsDatabaseMigrator.Domain">
+      <HintPath>..\SpmcoGateAutomation.Web\bin\Debug\net6.0-windows\SpmcoBctsDatabaseMigrator.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="SpmcoBctsDatabaseMigrator.Infrastructure">
+      <HintPath>..\SpmcoGateAutomation.Web\bin\Debug\net6.0-windows\SpmcoBctsDatabaseMigrator.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

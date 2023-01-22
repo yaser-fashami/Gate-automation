@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+<!---->    <PackageReference Include="TanvirArjel.Extensions.Microsoft.DependencyInjection" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpmcoGateAutomation.Contract\SpmcoGateAutomation.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SpmcoBctsDatabaseMigrator.Domain">
+      <HintPath>..\DbLibrary\SpmcoBctsDatabaseMigrator.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="SpmcoBctsDatabaseMigrator.Infrastructure">
+      <HintPath>..\DbLibrary\SpmcoBctsDatabaseMigrator.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

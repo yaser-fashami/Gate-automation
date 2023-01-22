@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ConcreteServices\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+    <PackageReference Include="Stimulsoft.Reports.Web.NetCore" Version="2019.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpmcoGateAutomation.Common\SpmcoGateAutomation.Common.csproj" />
+    <ProjectReference Include="..\SpmcoGateAutomation.Contract\SpmcoGateAutomation.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="cmaccrdotnet8">
+      <HintPath>..\SpmcoGateAutomation.Web\bin\Release\net6.0\cmaccrdotnet8.dll</HintPath>
+    </Reference>
+    <Reference Include="cmanprdotnet8">
+      <HintPath>..\SpmcoGateAutomation.Web\bin\Release\net6.0\cmanprdotnet8.dll</HintPath>
+    </Reference>
+    <Reference Include="gxdotnet8">
+      <HintPath>..\SpmcoGateAutomation.Web\bin\Release\net6.0\gxdotnet8.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
